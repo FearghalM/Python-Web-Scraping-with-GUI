@@ -24,11 +24,9 @@ def scrapeWebPage():
                 link_text = link.get('href')
                 link_label = tk.Label(root, text=link_text, fg="blue", cursor="hand2")
                 link_label.grid(sticky="w")
-                link_label.bind("<Button-1>", lambda e, url=link_text: onclickLink(url))
+                link_label.bind("<Button-1>", lambda url=link_text: onclickLink(url))
     else:
         resultLabel.config(text="Error accessing web page")
-
-
 
 # Code to create GUI
 root = tk.Tk()
