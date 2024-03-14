@@ -42,12 +42,12 @@ scrapeButton = tk.Button(root, text="Scrape", command=scrapeWebPage)
 scrapeButton.grid(row=0, column=2)
 
 resultLabel = tk.Label(root, text="")
-resultLabel.grid(row=1, column=0, columnspan=3)
+resultLabel.grid(row=1, column=0)
 
 linksLabel = tk.Label(root, text="")
-linksLabel.grid(row=2, column=0, columnspan=3)
+linksLabel.grid(row=2, column=0)
 
 linksResultLabel = tk.Label(root, text="")
-linksResultLabel.grid(row=3, column=0, columnspan=3)
+linksResultLabel.grid(row=3, column=0)
 
 root.mainloop()
